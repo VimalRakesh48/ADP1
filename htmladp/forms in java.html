@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             function add(){
+                a=document.getElementById("fn".value);
+                b=document.getElementById("sn").value;
+            var c;
+            c=parseInt(a)+parseInt(b);
+            window.alert(c);
+        }
+        function sub(){
+                a=document.getElementById("fn".value);
+                b=document.getElementById("sn").value;
+            var c;
+            c=parseInt(a)-parseInt(b);
+            window.alert(c);
+        }    
+        function mul(){
+                a=document.getElementById("fn").value;
+                b=document.getElementById("sn").value;
+            var c;
+            c=parseInt(a)*parseInt(b);
+            window.alert(c);
+        }
+        function div(a,b)
+        {
+                a=document.getElementById("fn".value);
+                b=document.getElementById("sn").value;
+            var c;
+            c=parseInt(a)/parseInt(b);
+            window.alert(c);
+        }
+    <body>
+        <form>
+                        Number one <input type="text box" id="fn"><br><br>
+                
+                        Number second<input type="text box" id="sn"><br><br>
+                   
+                       ADD <input type="button" onclick="add()">
+                       SUB <input type="button" onclick="sub()">
+                       MUL <input type="button" onclick="mul()">
+                       DIV <input type="button" onclick="div()">
